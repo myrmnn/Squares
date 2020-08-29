@@ -1,0 +1,52 @@
+body{
+	background: black;
+}
+.frame{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	max-width: 800px;
+	}
+	
+	.square {
+	height: 150px;
+	width: 150px;
+    background: rgb(75, 66, 156);
+    border: 2px solid navy;
+    margin: 20px 10px;
+    }
+
+		.square:hover{
+			background: black;
+			transition: all .1s;
+			border: 2px solid rebeccapurple;
+			border-radius: 50%;
+		}
+
+		.square:not(:hover){
+			transition: all .3s;
+		}
+
+		.square:active {
+			background: magenta;
+			border: 2px solid magenta;
+		}
+
+		.none {
+			background: black;
+
+			border: 2px solid black;
+		}
+
+		p {
+			color: white;
+		}

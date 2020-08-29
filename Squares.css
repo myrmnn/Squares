@@ -1,42 +1,68 @@
-    .square {
-    width: 5%;
-    background: black;
-    border: 2px solid rebeccapurple;
-    padding-bottom: 5%;
-    float: left;
-    margin: 1%;
-    }
+body {
+  background: black;
+}
 
-		body {
-			background: black;
-		}
+.frame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
 
-		#container {
-			width: 90%;
-			margin: 0 auto;
-		}
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  max-width: 800px;
+}
 
-		.square:hover{
-			background: black;
-			transition: all .1s;
-			border: 2px solid rebeccapurple;
-			border-radius: 50%;
-		}
-		.square:not(:hover){
-			transition: all 5s;
-		}
+.square {
+  height: 150px;
+  width: 150px;
+  background: #4b429c;
+  border: 2px solid navy;
+  margin: 20px 10px;
+}
 
-		.square:active {
-			background: magenta;
-			border: 2px solid magenta;
-		}
+.square:hover {
+  background: black;
+  -webkit-transition: all .1s;
+  transition: all .1s;
+  border: 2px solid rebeccapurple;
+  border-radius: 50%;
+}
 
-		.none {
-			background: black;
+.square:not(:hover) {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
 
-			border: 2px solid black;
-		}
+.square:active {
+  background: magenta;
+  border: 2px solid magenta;
+}
 
-		p {
-			color: white;
-		}
+.none {
+  background: black;
+  border: 2px solid black;
+}
+
+p {
+  color: white;
+}
+/*# sourceMappingURL=Squares.css.map */
